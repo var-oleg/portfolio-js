@@ -24,7 +24,7 @@ navClose.addEventListener('click',()=>{
 //Fix Nav
 const navHeight = navBar.getBoundingClientRect().height;
 window.addEventListener('scroll',()=>{
-    const scrollHeight = window.pegeYOffset;
+    const scrollHeight = window.pageXOffset;
     if (scrollHeight > navHeight){
         navBar.classList.add("fix-nav");
     } else{
@@ -69,7 +69,7 @@ gsap.from(".icons span", {
     stagger: 0.2,
 })
 
-new TypeIt("#type2", {
+new TypeIt2("#type2", {
     speed: 120,
     loop: true,
     waitUntilVisible: true,
