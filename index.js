@@ -24,7 +24,7 @@ navClose.addEventListener('click',()=>{
 //Fix Nav
 const navHeight = navBar.getBoundingClientRect().height;
 window.addEventListener('scroll',()=>{
-    const scrollHeight = window.pageXOffset;
+    const scrollHeight = window.pageYOffset;
     if (scrollHeight > navHeight){
         navBar.classList.add("fix-nav");
     } else{

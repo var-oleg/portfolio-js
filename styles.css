@@ -85,7 +85,7 @@ nav{
     padding: 1rem 0;
 }
 
-.nav.fix.nav{
+.nav.fix-nav{
     position: fixed;
     top: 0;
     left: 0;
