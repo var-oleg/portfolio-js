@@ -92,6 +92,8 @@ nav{
     width: 100%;
     background-color: #dd9a05;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 500ms linear;
+    opacity: 90%;
     z-index: 999;
 }
 

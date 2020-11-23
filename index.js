@@ -69,7 +69,7 @@ gsap.from(".icons span", {
     stagger: 0.2,
 })
 
-new TypeIt2("#type2", {
+new TypeIt("#type2", {
     speed: 120,
     loop: true,
     waitUntilVisible: true,
