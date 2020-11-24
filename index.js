@@ -57,7 +57,7 @@ gsap.from(".hero a", {opacity: 0, duration: 1, delay: 3.5, y: 50})
 gsap.from(".nav-item", {
     opacity: 0,
     duration: 1,
-    delay: 3.5,
+    delay: 1,
     y: 50,
     stagger: 0.2,
 })
