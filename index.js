@@ -32,6 +32,26 @@ window.addEventListener('scroll',()=>{
     }
 })
 
+//Scroll To
+
+const links = [...document.querySelectorAll("scroll-link")];
+links.map(link =>{
+    link.addEventListener("click",e =>{
+        e.preventDefault();
+        const id = e.target.getAttribute("href").slice(1);
+        const el = document.getElementById(id);
+        let position = el.offsetTop - navHeight;
+
+        window.scrollTo({
+            top: position,
+            left: 0,
+        });
+        navBar.classList.remove('show')
+        menu.classList.remove('show')
+        document.body.classList.remove('show')
+    });
+});
+
 new TypeIt("#type1", {
     speed: 120,
     loop: true,
@@ -81,3 +101,29 @@ new TypeIt("#type2", {
     .pause(500)
     .delete(9)
     .go();
+
+//Glide js
+
+const glide = document.querySelector(".glide");
+
+if(glide)
+    new Glide(glide,{
+        type: "carousel",
+        startAt: 0,
+        perView: 3,
+        gap: 30,
+        hoverpause: true,
+        autoplay: 2000,
+        animationDuration: 800,
+        animationTimingFunc: "ease-in-out",
+        breackpoints:{
+            996: {
+                perView: 2,
+            },
+            768: {
+                perView: 1,
+            },
+        }
+    }).mount();
+
+AOS.init();
